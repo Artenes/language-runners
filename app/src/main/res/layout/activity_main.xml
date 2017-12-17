@@ -11,14 +11,14 @@
         android:padding="@dimen/padding">
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spnDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:entries="@array/distances"/>
+            android:entries="@array/distances" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -27,13 +27,13 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txvTimer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/time"
         android:gravity="center"
-        android:textSize="30sp"
-        android:padding="@dimen/padding"/>
+        android:padding="@dimen/padding"
+        android:text="@string/time"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,16 +55,18 @@
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/txvJavaTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/time"
                 android:layout_weight="1"
-                android:gravity="end"/>
+                android:gravity="end"
+                android:text="@string/time"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/progressJava"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -95,7 +97,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/time"
                 android:layout_weight="1"
-                android:gravity="end"/>
+                android:gravity="end"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
@@ -130,7 +133,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/time"
                 android:layout_weight="1"
-                android:gravity="end"/>
+                android:gravity="end"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
